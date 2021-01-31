@@ -16,6 +16,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+a:hover {
+  color: #888888;
+}
 
 * {
   box-sizing: border-box;

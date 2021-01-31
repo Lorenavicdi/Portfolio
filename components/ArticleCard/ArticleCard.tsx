@@ -39,10 +39,8 @@ export const ArticleCard = ({
               <p className={`${styles.footer} p-0`}>{textFooter}</p>
             </div>
           </div>
-          <div className="col">
-            <div className="p-3">
-              <img src={img} alt={alt} />
-            </div>
+          <div className="col text-end">
+            <img src={img} alt={alt} />
           </div>
         </div>
       </article>

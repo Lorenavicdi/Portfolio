@@ -30,7 +30,7 @@ export default function Home() {
           img="./sleepwell.png"
           alt="Noche apacible"
           imgPosition={ImgPosition.left}
-          textHeader="DISEÑO UI - PROTECTO PERSONAL"
+          textHeader="DISEÑO UI - PROYECTO PERSONAL"
           textTitle="Sleepwell"
           textFooter="Concepto de interfaz para una app de monitorización del sueño."
         />
@@ -45,7 +45,7 @@ export default function Home() {
           textFooter="Concepto de interfaz para un reproductor digital de música."
         />
       </div>
-      <div className={styles.article}>
+      <div className={`${styles.article} pb-5`}>
         <ArticleCard
           img="./miscelanea.png"
           alt="Tablet con lapiz para dibujar"
@@ -54,9 +54,9 @@ export default function Home() {
           textTitle="Miscelánea"
           textFooter="Otros proyectos no relacionados con UX/UI"
         />
-        <div className={`${styles.article} pt-5 px-0 pb-4`}>
-          <Footer />
-        </div>
+      </div>
+      <div className={`${styles.article} py-5 px-0`}>
+        <Footer />
       </div>
     </div>
   );
