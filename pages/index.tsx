@@ -17,7 +17,7 @@ export default function Home() {
       <MainTitle />
       <div className={styles.firstArticle}>
         <ArticleCard
-          img="/animaloo.png"
+          img="./animaloo.png"
           alt="Pareja adopta un nuevo animal"
           imgPosition={ImgPosition.right}
           textHeader="DISEÑO UX/UI - TRABAJO FINAL DE GRADO"
@@ -27,7 +27,7 @@ export default function Home() {
       </div>
       <div className={styles.article}>
         <ArticleCard
-          img="/sleepwell.png"
+          img="./sleepwell.png"
           alt="Noche apacible"
           imgPosition={ImgPosition.left}
           textHeader="DISEÑO UI - PROTECTO PERSONAL"
@@ -37,7 +37,7 @@ export default function Home() {
       </div>
       <div className={styles.article}>
         <ArticleCard
-          img="/synstsia.png"
+          img="./synstsia.png"
           alt="Persona usando una app para escuchar musica"
           imgPosition={ImgPosition.right}
           textHeader="DISEÑO UI - PROYECTO PERSONAL"
@@ -47,7 +47,7 @@ export default function Home() {
       </div>
       <div className={styles.article}>
         <ArticleCard
-          img="/miscelanea.png"
+          img="./miscelanea.png"
           alt="Tablet con lapiz para dibujar"
           imgPosition={ImgPosition.left}
           textHeader="OTROS"
