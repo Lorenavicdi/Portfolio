@@ -1,0 +1,76 @@
+import styles from "./ArticleCard.module.scss";
+import Image from "next/image";
+
+export enum ImgPosition {
+  left,
+  right,
+}
+
+interface Props {
+  img: string;
+  alt: string;
+  imgPosition: ImgPosition;
+  textHeader: string;
+  textTitle: string;
+  textFooter: string;
+}
+
+export const ArticleCard = ({
+  img,
+  alt,
+  imgPosition,
+  textHeader,
+  textTitle,
+  textFooter,
+}: Props) => {
+  if (imgPosition === ImgPosition.right) {
+    return (
+      <article className={`${styles.articleCardContainer} container`}>
+        <div className="row align-items-center">
+          <div className="col">
+            <div className="row pt-5">
+              <p className={`${styles.header} border-bottom pt-5 p-0`}>
+                {textHeader}
+              </p>
+            </div>
+            <div className="row">
+              <h1 className={`${styles.title} p-0 mt-0`}>{textTitle}</h1>
+            </div>
+            <div className="row">
+              <p className={`${styles.footer} p-0`}>{textFooter}</p>
+            </div>
+          </div>
+          <div className="col">
+            <div className="p-3">
+              <Image src={img} alt={alt} width="620" height="393" />
+            </div>
+          </div>
+        </div>
+      </article>
+    );
+  }
+  if (imgPosition === ImgPosition.left) {
+    return (
+      <article className={`${styles.articleCardContainer} container `}>
+        <div className="row align-items-center ">
+          <div className="col">
+            <Image src={img} alt={alt} width="620" height="393" />
+          </div>
+          <div className="col text-end">
+            <div className="row pt-5 ">
+              <p className={`${styles.header} border-bottom pt-5 p-0`}>
+                {textHeader}
+              </p>
+            </div>
+            <div className="row">
+              <h1 className={`${styles.title} p-0 mt-0`}>{textTitle}</h1>
+            </div>
+            <div className="row">
+              <p className={`${styles.footer} p-0`}>{textFooter}</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    );
+  }
+};

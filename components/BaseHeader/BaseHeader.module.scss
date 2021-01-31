@@ -1,4 +1,11 @@
-.lorena {
-  font-family: Poppins, sans-serif;
-  color: #fbfbfb;
+.baseHeaderContainer {
+  z-index: 3;
+  .title {
+    font-weight: bold;
+    font-size: 23px;
+  }
+  .navbar {
+    font-weight: bold;
+    font-size: 15px;
+  }
 }
