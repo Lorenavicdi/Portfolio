@@ -1,5 +1,4 @@
 import styles from "./ArticleCard.module.scss";
-import Image from "next/image";
 
 export enum ImgPosition {
   left,
@@ -42,7 +41,7 @@ export const ArticleCard = ({
           </div>
           <div className="col">
             <div className="p-3">
-              <Image src={img} alt={alt} width="620" height="393" />
+              <img src={img} alt={alt} />
             </div>
           </div>
         </div>
@@ -54,7 +53,7 @@ export const ArticleCard = ({
       <article className={`${styles.articleCardContainer} container `}>
         <div className="row align-items-center ">
           <div className="col">
-            <Image src={img} alt={alt} width="620" height="393" />
+            <img src={img} alt={alt} />
           </div>
           <div className="col text-end">
             <div className="row pt-5 ">
